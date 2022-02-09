@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Poppins:wght@200;300;500&family=Quicksand:wght@400;700&display=swap');
+
+body {
+    background-color: #072227;
+    color: #AEFEFF;
+    overflow-x: hidden;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+a {
+    transition: all .3s;
+}
+
+a:hover {
+    box-shadow: rgba(79, 189, 186, 0.4) 0px 5px, rgba(79, 189, 186, 0.3) 0px 10px, rgba(79, 189, 186, 0.2) 0px 15px, rgba(79, 189, 186, 0.1) 0px 20px, rgba(79, 189, 186, 0.05) 0px 25px;
+}
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: #4FBDBA;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5rem;
+}
+
+hr {
+    width: 50%;
+}
+
+button {
+    background-color: #35858B;
+    padding: .2rem .8rem;
+    color: #D3DEDC;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 8px;
+    border-style: none;
+    cursor: pointer;
+    transition: background-color .3s;
+    height: 2rem;
+    margin: .2rem;
+}
+
+input {
+    border-radius: 8px;
+    height: 1.7rem;
+    border-style: none;
+}
+
+select {
+    border-radius: 8px;
+    border-style: none;
+}
+
+button:hover {
+    background-color: #086E7D;
+}
+
+table {
+    border: 1px dashed #086E7D;
+    padding: 1rem;
+}
+
+table thead tr,
+table tbody th {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+table tbody th {
+    height: 4rem;
+    border-top: 1px dashed #086E7D;
+    border-right: 1px dashed #086E7D;
+    color: #FEE3EC;
+}
+
+table tbody td {
+    height: 4rem;
+    padding: .4rem;
+    color: #C6FFC1;
+    border-top: 1px dashed #AAD8D3;
+    font-size: 13px;
+}
+
+table tbody td:not(td:last-child) {
+    border-right: 1px dashed #AAD8D3;
+}
+
+table thead tr td {
+    width: 4rem;
+    padding: 1.5rem;
+}
+
+table thead tr td:not(td:last-child) {
+    border-right: 1px dashed #086E7D;
+}
+
+select {
+    height: 2rem;
+}
+
+textarea {
+    border-radius: 8px;
+    border-style: none;
+    padding: .4rem;
+}
+
+.td--head {
+    background-color: rgba(233, 229, 214, .1);
+}
+
+.td--head-2 {
+    background-color: rgba(3, 4, 94, .1);
+}
+
+.td--nb {
+    background-color: rgba(255, 135, 135, .3);
+}
+
+.td--default {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.td--img {
+    width: 80px;
+}
+
+.visitor-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.visitor-form > label {
+    display: flex;
+    flex-direction: column;
+}
+
+.simple-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    border: dashed 1px #D3DEDC;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.simple-form fieldset {
+    border-style: none;
+}
+
+.simple-form__skills {
+    display: flex;
+    flex-direction: row;
+    max-width: 423px;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+}
+
+.simple-form__skills > div {
+    display: flex;
+    flex-direction: row;
+    column-gap: .3rem;
+}
+
+.simple-form__row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+.simple-form__row:nth-child(2) {
+    border-bottom: solid 1px #D3DEDC;
+    padding-bottom: 2rem;
+}
+
+.simple-form__label {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.simple-form__txt--h2 {
+    border-bottom: solid 1px #D3DEDC;
+}
+
+.err {
+    color: #FF008E;
+    font-weight: 500;
+    height: 51px;
+    display: inline-flex;
+    border: 1px dashed #FF008E;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    text-transform: uppercase;
+    padding: .4rem;
+}
+
+.success {
+    padding: .4rem;
+    text-transform: uppercase;
+    color: #A3E4DB;
+    font-weight: 500;
+    height: 51px;
+    display: inline-flex;
+    border: 1px dashed #A3E4DB;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
